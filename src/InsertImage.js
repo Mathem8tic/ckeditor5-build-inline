@@ -1,8 +1,9 @@
 import imageIcon from '@ckeditor/ckeditor5-core/theme/icons/image.svg';
 
 import ButtonView from '@ckeditor/ckeditor5-ui/src/button/buttonview';
+import Plugin from '@ckeditor/ckeditor5-core/src/plugin';
 
-export class InsertImage extends Plugin {
+export default class InsertImage extends Plugin {
 	init() {
 		const editor = this.editor;
 
