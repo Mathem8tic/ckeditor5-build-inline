@@ -79,7 +79,8 @@ InlineEditor.defaultConfig = {
 			'insertTable',
 			'mediaEmbed',
 			'undo',
-			'redo'
+			'redo',
+			'insertImage'
 		]
 	},
 	image: {
