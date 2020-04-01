@@ -18,9 +18,8 @@ export default class InsertImage extends Plugin {
 
 			// Callback executed once the image is clicked.
 			view.on( 'execute', () => {
-				const imageURL = prompt( 'Image URL' );
+				editor.execute( 'mediaGallery', { test: 'this is a test' } );
 			} );
-
 			return view;
 		} );
 	}
