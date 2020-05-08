@@ -1376,6 +1376,15 @@ cipher-base@^1.0.0, cipher-base@^1.0.1, cipher-base@^1.0.3:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
 
+ckeditor5-custom-element@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/ckeditor5-custom-element/-/ckeditor5-custom-element-6.0.0.tgz#9b1c02cac3f3987c573fb4d02bd2b14ea6b1a4d3"
+  integrity sha512-bJ8VbESWaNV1B41231x/YMb7rLpnG9HRQ66wronCUSqho0ievFJVk5nyO5D7rSCj1Zl5f15rd865UjFP6RBbtA==
+  dependencies:
+    "@ckeditor/ckeditor5-core" "^18.0.0"
+    "@ckeditor/ckeditor5-ui" "^18.0.0"
+    "@ckeditor/ckeditor5-widget" "^18.0.0"
+
 class-utils@^0.3.5:
   version "0.3.6"
   resolved "https://registry.yarnpkg.com/class-utils/-/class-utils-0.3.6.tgz#f93369ae8b9a7ce02fd41faad0ca83033190c463"
