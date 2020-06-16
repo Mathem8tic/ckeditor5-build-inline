@@ -5,8 +5,9 @@ import VideoEditing from "./videoediting";
 
 export default class Video extends Plugin {
 
+	// VideoUI, 
 	static get requires() {
-		return [VideoCommand, VideoUI, VideoEditing];
+		return [VideoCommand, VideoEditing];
 	}
 	static get pluginName() {
 		return "Video";

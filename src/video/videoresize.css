@@ -1,0 +1,6 @@
+.ck-content video.video_resized {
+	max-width: 100%;
+	display: block;
+	box-sizing: border-box;
+
+}

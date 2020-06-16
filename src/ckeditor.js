@@ -29,9 +29,11 @@ import PasteFromOffice from "@ckeditor/ckeditor5-paste-from-office/src/pastefrom
 import Table from "@ckeditor/ckeditor5-table/src/table";
 import TableToolbar from "@ckeditor/ckeditor5-table/src/tabletoolbar";
 import TextTransformation from "@ckeditor/ckeditor5-typing/src/texttransformation";
-import CustomElementPlugin from "ckeditor5-custom-element/src/customelement";
+// import CustomElementPlugin from "ckeditor5-custom-element/src/customelement";
 import MediaLibrary from "./media-library/medialibrary";
-import customIcon from "./custom.svg";
+import Video from "./video/video";
+import customIcon from "./photo-video-solid.svg";
+import VideoResize from './video/videoresize';
 
 export default class InlineEditor extends InlineEditorBase {}
 
@@ -60,8 +62,9 @@ InlineEditor.builtinPlugins = [
 	TableToolbar,
 	TextTransformation,
 	MediaLibrary,
+	Video,
+	VideoResize,
 	ImageResize,
-	CustomElementPlugin,
 ];
 
 // Editor configuration.
@@ -84,25 +87,7 @@ InlineEditor.defaultConfig = {
 			"undo",
 			"redo",
 			"|",
-			"mediaLibrary",
-			"custom-element-app-card",
-		],
-	},
-	CustomElement: {
-		items: [
-			{
-				tag: "app-card",
-				placeholder: "some text",
-				attributes: {
-					name: "ABCD",
-					title: "TEsterooooney",
-					url:
-						"http://media.thebrick.local/sample-30s-1586229221.mp4",
-				},
-				icon: customIcon,
-				inline: false,
-				editable: false,
-			},
+			"mediaLibrary"
 		],
 	},
 	image: {
@@ -113,6 +98,12 @@ InlineEditor.defaultConfig = {
 			"imageTextAlternative",
 		],
 	},
+	// video: {
+	// 	toolbar: [
+	// 		"videoStyle:full",
+	// 		"videoStyle:side",
+	// 	],
+	// },
 	table: {
 		contentToolbar: ["tableColumn", "tableRow", "mergeTableCells"],
 	},

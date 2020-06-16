@@ -1,6 +1,6 @@
 import Plugin from '@ckeditor/ckeditor5-core/src/plugin';
 import ButtonView from '@ckeditor/ckeditor5-ui/src/button/buttonview';
-import quoteIcon from '@ckeditor/ckeditor5-core/theme/icons/quote.svg';
+import mediaIcon from '../photo-video-solid.svg';
 
 export default class MediaLibraryUI extends Plugin {
 	init() {
@@ -13,7 +13,7 @@ export default class MediaLibraryUI extends Plugin {
 
 			buttonView.set( {
 				label: t( 'Media Library' ),
-				icon: quoteIcon,
+				icon: mediaIcon,
 				tooltip: true,
 				isToggleable: true
 			} );
