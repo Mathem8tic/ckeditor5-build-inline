@@ -34,8 +34,7 @@ export default class VideoEditing extends Plugin {
 			view: {
 				name: "source",
 				attributes: {
-					src:
-						"",
+					src: "",
 					type: "video/mp4",
 				},
 			},
@@ -107,9 +106,8 @@ export default class VideoEditing extends Plugin {
 
 		conversion.for("editingDowncast").elementToElement({
 			model: "video",
-			view: (modelElement, viewWriter) => {
-				return createVideoViewElement(viewWriter, modelElement);
-			},
+			// view: (modelElement, viewWriter) => toVideoWidget( createVideoViewElement(viewWriter, modelElement))
+			view: ( modelElement, viewWriter ) => toVideoWidget( createVideoViewElement( viewWriter, modelElement ), viewWriter, t( 'video widget' ) )
 		});
 
 		editor.commands.add("video", new VideoCommand(editor));
@@ -118,6 +116,10 @@ export default class VideoEditing extends Plugin {
 
 // Mathem8tic
 export function createVideoViewElement(writer, model) {
+
+
+	// const figure = writer.createContainerElement( 'figure', { class: 'image' } );
+
 	const source = writer.createEmptyElement("source", {
 		src: model.getAttribute("src"),
 		type: "video/mp4",
@@ -146,14 +148,18 @@ export function getViewVideoFromWidget(figureView) {
 	);
 }
 
+export function toVideoWidget( viewElement, writer, label ) {
+	// writer.setCustomProperty( 'video', true, viewElement );
+
+	return toWidget( viewElement, writer );
+}
+
 export function modelToViewAttributeConverter(attributeKey) {
 	return (dispatcher) => {
 		dispatcher.on(`attribute:${attributeKey}:video`, converter);
 	};
 
 	function converter(evt, data, conversionApi) {
-		console.log("data: ", data);
-
 		if (!conversionApi.consumable.consume(data.item, evt.name)) {
 			return;
 		}
@@ -191,35 +197,35 @@ export function viewVideoToModel() {
 		}
 
 		// Find an image element inside the figure element.
-		const viewImage = getViewImgFromWidget(data.viewItem);
+		const viewVideo = getViewVideoFromWidget(data.viewItem);
 
 		// Do not convert if image element is absent, is missing src attribute or was already converted.
 		if (
-			!viewImage ||
-			!viewImage.hasAttribute("src") ||
-			!conversionApi.consumable.test(viewImage, { name: true })
+			!viewVideo ||
+			!viewVideo.hasAttribute("src") ||
+			!conversionApi.consumable.test(viewVideo, { name: true })
 		) {
 			return;
 		}
 
 		// Convert view image to model image.
 		const conversionResult = conversionApi.convertItem(
-			viewImage,
+			viewVideo,
 			data.modelCursor
 		);
 
 		// Get image element from conversion result.
-		const modelImage = first(conversionResult.modelRange.getItems());
+		const modelVideo = first(conversionResult.modelRange.getItems());
 
 		// When image wasn't successfully converted then finish conversion.
-		if (!modelImage) {
+		if (!modelVideo) {
 			return;
 		}
 
 		// Convert rest of the figure element's children as an image children.
 		conversionApi.convertChildren(
 			data.viewItem,
-			conversionApi.writer.createPositionAt(modelImage, 0)
+			conversionApi.writer.createPositionAt(modelVideo, 0)
 		);
 
 		// Set image range as conversion result.

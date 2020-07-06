@@ -3,18 +3,13 @@ import Command from "@ckeditor/ckeditor5-core/src/command";
 
 export default class VideoCommand extends Command {
 	execute(options = {}) {
-		console.log("YAYAYAYAYAYAYAYA");
 		const model = this.editor.model;
-		model.document.fire("video", { message: "video fired" });
+		// model.document.fire("video", { message: "video fired" });
 
 		model.change((writer) => {
-			// 	const sources = Array.isArray( options.source ) ? options.source : [ options.source ];
-
-			// 	for ( const src of sources ) {
 			insertVideo(writer, model, {
 				src: "http://media.thebrick.local/sample-30s-1586229221.mp4",
 			});
-			// }
 		});
 	}
 }
@@ -33,10 +28,10 @@ export default class VideoCommand extends Command {
 export function insertVideo(writer, model, attributes = {}) {
 	const videoElement = writer.createElement("video", attributes);
 
-	// const insertAtSelection = findOptimalInsertionPosition(
-	// 	model.document.selection,
-	// 	model
-	// );
+	const insertAtSelection = findOptimalInsertionPosition(
+		model.document.selection,
+		model
+	);
 
 	model.insertContent(videoElement, model.document.selection);
 
