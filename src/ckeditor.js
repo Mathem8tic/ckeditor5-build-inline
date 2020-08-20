@@ -85,7 +85,7 @@ InlineEditor.defaultConfig = {
 			'redo',
 			'|',
 			'mediaLibrary',
-			'custom-element-app-card'
+			// 'custom-element-app-card'
 		]
 	},
 	CustomElement: {
