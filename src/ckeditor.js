@@ -30,7 +30,7 @@ import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
 // import CustomElementPlugin from 'ckeditor5-custom-element/src/customelement';
-import MediaLibrary from './media-library/medialibrary';
+// import MediaLibrary from './media-library/medialibrary';
 // import customIcon from './custom.svg';
 
 export default class InlineEditor extends InlineEditorBase {}
@@ -59,7 +59,7 @@ InlineEditor.builtinPlugins = [
 	Table,
 	TableToolbar,
 	TextTransformation,
-	MediaLibrary,
+	// MediaLibrary,
 	ImageResize
 	// CustomElementPlugin
 ];
