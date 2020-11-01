@@ -1,9 +1,11 @@
 CKEditor 5 inline editor build
 ==============================================
 
+<h3 align=center>⚠⚠ This repository was moved ⚠⚠</h3>
+
+<p align=center>The package was moved to the <a href="https://github.com/ckeditor/ckeditor5/tree/master/packages">main repository</a>.</p>
+
 [![npm version](https://badge.fury.io/js/%40ckeditor%2Fckeditor5-build-inline.svg)](https://www.npmjs.com/package/@ckeditor/ckeditor5-build-inline)
-[![Build Status](https://travis-ci.org/ckeditor/ckeditor5-build-inline.svg?branch=master)](https://travis-ci.org/ckeditor/ckeditor5-build-inline)
-<br>
 [![Dependency Status](https://david-dm.org/ckeditor/ckeditor5-build-inline/status.svg)](https://david-dm.org/ckeditor/ckeditor5-build-inline)
 [![devDependency Status](https://david-dm.org/ckeditor/ckeditor5-build-inline/dev-status.svg)](https://david-dm.org/ckeditor/ckeditor5-build-inline?type=dev)
 
