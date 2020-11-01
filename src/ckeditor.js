@@ -31,7 +31,7 @@ import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
 // import CustomElementPlugin from 'ckeditor5-custom-element/src/customelement';
 import MediaLibrary from './media-library/medialibrary';
-import customIcon from './custom.svg';
+// import customIcon from './custom.svg';
 
 export default class InlineEditor extends InlineEditorBase {}
 
@@ -82,28 +82,28 @@ InlineEditor.defaultConfig = {
 			'blockQuote',
 			'insertTable',
 			'undo',
-			'redo',
-			'|',
-			'mediaLibrary',
+			'redo'
+			// '|',
+			// 'mediaLibrary'
 			// 'custom-element-app-card'
 		]
 	},
-	CustomElement: {
-		items: [
-			{
-				tag: 'app-card',
-				placeholder: 'some text',
-				attributes: {
-					name: 'ABCD',
-					title: 'TEsterooooney',
-					url: 'http://media.thebrick.local/sample-30s-1586229221.mp4'
-				},
-				icon: customIcon,
-				inline: false,
-				editable: false
-			}
-		]
-	},
+	// CustomElement: {
+	// 	items: [
+	// 		{
+	// 			tag: 'app-card',
+	// 			placeholder: 'some text',
+	// 			attributes: {
+	// 				name: 'ABCD',
+	// 				title: 'TEsterooooney',
+	// 				url: 'http://media.thebrick.local/sample-30s-1586229221.mp4'
+	// 			},
+	// 			icon: customIcon,
+	// 			inline: false,
+	// 			editable: false
+	// 		}
+	// 	]
+	// },
 	image: {
 		toolbar: [
 			'imageStyle:full',
