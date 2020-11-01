@@ -82,9 +82,9 @@ InlineEditor.defaultConfig = {
 			'blockQuote',
 			'insertTable',
 			'undo',
-			'redo'
-			// '|',
-			// 'mediaLibrary'
+			'redo',
+			'|',
+			'mediaLibrary'
 			// 'custom-element-app-card'
 		]
 	},
