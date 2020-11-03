@@ -419,6 +419,15 @@
     "@ckeditor/ckeditor5-utils" "^19.0.1"
     "@ckeditor/ckeditor5-widget" "^19.1.0"
 
+"@ckeditor/ckeditor5-page-break@^19.0.0":
+  version "19.0.1"
+  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-page-break/-/ckeditor5-page-break-19.0.1.tgz#0c43e2b807c58b301164a1a1d971a322cce93467"
+  integrity sha512-gIYCaxLUrLlNQhRE+kO6KPiFJitYXKkxwyAfgRw3uBPqJDMIBzrajpxt/EeHSDQGjP0idiH5R+S500XB03odTQ==
+  dependencies:
+    "@ckeditor/ckeditor5-core" "^19.0.1"
+    "@ckeditor/ckeditor5-ui" "^19.0.1"
+    "@ckeditor/ckeditor5-widget" "^19.1.0"
+
 "@ckeditor/ckeditor5-paragraph@^19.0.0", "@ckeditor/ckeditor5-paragraph@^19.1.0":
   version "19.1.0"
   resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-paragraph/-/ckeditor5-paragraph-19.1.0.tgz#5040f7e3449fbf490908ba57a434bbfa1a448c9a"

@@ -33,6 +33,7 @@
     "@ckeditor/ckeditor5-core": "^19.0.0",
     "@ckeditor/ckeditor5-dev-utils": "^13.0.0",
     "@ckeditor/ckeditor5-dev-webpack-plugin": "^9.0.0",
+    "@ckeditor/ckeditor5-page-break": "^19.0.0",
     "@ckeditor/ckeditor5-easy-image": "^19.0.0",
     "@ckeditor/ckeditor5-editor-inline": "^19.0.0",
     "@ckeditor/ckeditor5-essentials": "^19.0.0",
@@ -93,7 +94,6 @@
     }
   },
   "dependencies": {
-    "@ckeditor/ckeditor5-page-break": "^23.1.0",
     "ckeditor5-custom-element": "^6.0.0"
   }
 }

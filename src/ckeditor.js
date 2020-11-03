@@ -60,9 +60,9 @@ InlineEditor.builtinPlugins = [
 	Table,
 	TableToolbar,
 	TextTransformation,
-	PageBreak,
 	MediaLibrary,
-	ImageResize
+	ImageResize,
+	PageBreak
 	// CustomElementPlugin
 ];
 

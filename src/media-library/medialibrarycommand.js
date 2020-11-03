@@ -2,7 +2,7 @@
 import Command from '@ckeditor/ckeditor5-core/src/command';
 
 export default class MediaLibraryCommand extends Command {
-	execute( options = {} ) {
+	execute( ) {
 		const model = this.editor.model;
 		// console.log( 'model: ', model );
 		// const schema = model.schema;
