@@ -29,6 +29,7 @@ import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefrom
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
+import PageBreak from '@ckeditor/ckeditor5-page-break/src/pagebreak';
 // import CustomElementPlugin from 'ckeditor5-custom-element/src/customelement';
 import MediaLibrary from './media-library/medialibrary';
 // import customIcon from './custom.svg';
@@ -59,6 +60,7 @@ InlineEditor.builtinPlugins = [
 	Table,
 	TableToolbar,
 	TextTransformation,
+	PageBreak,
 	MediaLibrary,
 	ImageResize
 	// CustomElementPlugin
@@ -75,6 +77,7 @@ InlineEditor.defaultConfig = {
 			'link',
 			'bulletedList',
 			'numberedList',
+			'pageBreak',
 			'|',
 			'indent',
 			'outdent',

@@ -93,6 +93,7 @@
     }
   },
   "dependencies": {
+    "@ckeditor/ckeditor5-page-break": "^23.1.0",
     "ckeditor5-custom-element": "^6.0.0"
   }
 }
