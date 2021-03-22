@@ -43,6 +43,7 @@ InlineEditor.builtinPlugins = [
 	Autoformat,
 	Bold,
 	Italic,
+	Underline,
 	BlockQuote,
 	EasyImage,
 	Heading,
@@ -62,7 +63,8 @@ InlineEditor.builtinPlugins = [
 	TextTransformation,
 	MediaLibrary,
 	ImageResize,
-	PageBreak
+	PageBreak,
+	Highlight
 	// CustomElementPlugin
 ];
 
@@ -74,10 +76,12 @@ InlineEditor.defaultConfig = {
 			'|',
 			'bold',
 			'italic',
+			'underline',
 			'link',
 			'bulletedList',
 			'numberedList',
 			'pageBreak',
+			'highlight',
 			'|',
 			'indent',
 			'outdent',
