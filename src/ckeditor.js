@@ -10,7 +10,9 @@ import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials';
 import UploadAdapter from '@ckeditor/ckeditor5-adapter-ckfinder/src/uploadadapter';
 import Autoformat from '@ckeditor/ckeditor5-autoformat/src/autoformat';
 import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold';
+import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline';
 import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
+import Highlight from '@ckeditor/ckeditor5-highlight/src/highlight';
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote';
 import EasyImage from '@ckeditor/ckeditor5-easy-image/src/easyimage';
 import Heading from '@ckeditor/ckeditor5-heading/src/heading';
@@ -46,6 +48,7 @@ InlineEditor.builtinPlugins = [
 	Underline,
 	BlockQuote,
 	EasyImage,
+	Highlight,
 	Heading,
 	Image,
 	ImageCaption,
@@ -63,8 +66,7 @@ InlineEditor.builtinPlugins = [
 	TextTransformation,
 	MediaLibrary,
 	ImageResize,
-	PageBreak,
-	Highlight
+	PageBreak
 	// CustomElementPlugin
 ];
 

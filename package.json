@@ -94,6 +94,7 @@
     }
   },
   "dependencies": {
+    "@ckeditor/ckeditor5-highlight": "^26.0.0",
     "ckeditor5-custom-element": "^6.0.0"
   }
 }
