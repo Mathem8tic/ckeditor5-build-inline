@@ -192,6 +192,14 @@
     "@ckeditor/ckeditor5-core" "^19.0.1"
     "@ckeditor/ckeditor5-upload" "^19.0.1"
 
+"@ckeditor/ckeditor5-alignment@^19.0.0":
+  version "19.0.1"
+  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-alignment/-/ckeditor5-alignment-19.0.1.tgz#1420b009d90358ab3da588cc892108d43342acc1"
+  integrity sha512-+7hNF2UackbrWyX4Dw0AYVVA9gWpWCbcqXsStslz2mkYhjYISWM4OBx+0jgglQCUnpnMdBcLG769auaDyPtz0A==
+  dependencies:
+    "@ckeditor/ckeditor5-core" "^19.0.1"
+    "@ckeditor/ckeditor5-ui" "^19.0.1"
+
 "@ckeditor/ckeditor5-autoformat@^19.0.0":
   version "19.0.1"
   resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-autoformat/-/ckeditor5-autoformat-19.0.1.tgz#79a992cc644f8b444d71b6c08144582abf7b7761"
@@ -362,6 +370,14 @@
     "@ckeditor/ckeditor5-paragraph" "^19.1.0"
     "@ckeditor/ckeditor5-ui" "^19.0.1"
     "@ckeditor/ckeditor5-utils" "^19.0.1"
+
+"@ckeditor/ckeditor5-highlight@^19.0.0":
+  version "19.0.1"
+  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-highlight/-/ckeditor5-highlight-19.0.1.tgz#611f51f2ba58a1fc6ac36bd59920f163454b55c6"
+  integrity sha512-T2A0cY6L/0PYB1ATYztWOuqodgydZP19fBFfb5CJyMN8Aw63Do6Re0wCpRJzYbukEeFJTbPmv/W1saetUI/ijg==
+  dependencies:
+    "@ckeditor/ckeditor5-core" "^19.0.1"
+    "@ckeditor/ckeditor5-ui" "^19.0.1"
 
 "@ckeditor/ckeditor5-image@^19.0.0", "@ckeditor/ckeditor5-image@^19.0.1":
   version "19.0.1"

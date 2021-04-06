@@ -14,6 +14,7 @@ import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline';
 import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
 import Highlight from '@ckeditor/ckeditor5-highlight/src/highlight';
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote';
+import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
 import EasyImage from '@ckeditor/ckeditor5-easy-image/src/easyimage';
 import Heading from '@ckeditor/ckeditor5-heading/src/heading';
 import Image from '@ckeditor/ckeditor5-image/src/image';
@@ -43,6 +44,7 @@ InlineEditor.builtinPlugins = [
 	Essentials,
 	UploadAdapter,
 	Autoformat,
+	Alignment,
 	Bold,
 	Italic,
 	Underline,
@@ -80,15 +82,16 @@ InlineEditor.defaultConfig = {
 			'italic',
 			'underline',
 			'link',
+			'blockQuote',
 			'bulletedList',
 			'numberedList',
 			'pageBreak',
 			'highlight',
 			'|',
+			'alignment',
 			'indent',
 			'outdent',
 			'|',
-			'blockQuote',
 			'insertTable',
 			'undo',
 			'redo',
@@ -125,7 +128,9 @@ InlineEditor.defaultConfig = {
 		contentToolbar: [
 			'tableColumn',
 			'tableRow',
-			'mergeTableCells'
+			'mergeTableCells',
+			'tableProperties',
+			'tableCellProperties'
 		]
 	},
 	// This value must be kept in sync with the language defined in webpack.config.js.
